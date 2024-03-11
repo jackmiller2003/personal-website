@@ -23,7 +23,7 @@ body {
 /* Adjustments for the flex container */
 #content>div {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     /* Side-by-side layout */
     align-items: center;
     /* Vertical alignment in the middle */
@@ -32,6 +32,17 @@ body {
     gap: 20px;
     /* Space between the image and the text */
     margin: 0 auto;
+}
+
+#summary ul {
+    display: block;
+    /* Override any flexbox alignment */
+    text-align: left;
+    /* Ensure text is aligned to the left */
+    padding: 0;
+    /* Reset padding if necessary */
+    margin: 0;
+    /* Adjust margin to fit your design */
 }
 
 #content img {
