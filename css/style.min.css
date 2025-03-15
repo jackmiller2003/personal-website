@@ -209,8 +209,13 @@ main#content ul#posts .post-link {
 main#content ul#posts img {
     margin-right: 10px;
     height: 100px;
-    width: auto;
+    width: 150px;
+    /* Fixed width to maintain 3:2 aspect ratio */
     border-radius: 5px;
+    object-fit: cover;
+    /* This crops the image to fit the container */
+    object-position: center;
+    /* Centers the image within the container */
 }
 
 main#content ul#posts .text-content {

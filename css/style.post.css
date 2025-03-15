@@ -20,47 +20,52 @@ body {
     overflow-wrap: break-word
 }
 
-/* Adjustments for the flex container */
-#content>div {
+/* Remove the flex container that's causing the column layout */
+/* #content>div {
     display: flex;
-    /* flex-direction: row; */
-    /* Side-by-side layout */
     align-items: center;
-    /* Vertical alignment in the middle */
     justify-content: flex-start;
-    /* Align items to the start of the container */
     gap: 20px;
-    /* Space between the image and the text */
     margin: 0 auto;
+} */
+
+/* Keep it simple for the summary section */
+#summary {
+    display: block;
+    text-align: left;
+}
+
+#summary p {
+    margin: 16px 0;
 }
 
 #summary ul {
     display: block;
-    /* Override any flexbox alignment */
     text-align: left;
-    /* Ensure text is aligned to the left */
     padding: 0;
-    /* Reset padding if necessary */
     margin: 0;
-    /* Adjust margin to fit your design */
 }
 
-#content img {
-    height: 200px;
-    /* Fixed height for the image */
+/* Image container styling with 3:2 aspect ratio */
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
     border-radius: 15px;
-    /* Rounded corners for the image */
-    flex-shrink: 0;
-    /* Prevent the image from shrinking */
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    object-position: center;
 }
 
 /* Adjust the layout for smaller screens */
 @media (max-width: 670px) {
-    #content>div {
-        flex-direction: column;
-        /* Stack vertically on smaller screens */
-        align-items: center;
-        /* Center-align the items */
+    .image-container {
+        margin: 15px 0;
     }
 }
 
@@ -485,13 +490,13 @@ main#content p {
     text-align: justify;
 }
 
+/* Video container for responsive video embedding */
 .video-container {
     position: relative;
     width: 100%;
-    padding-top: 56.25%;
-    /* 16:9 Aspect Ratio */
-    /* Round corners */
-    border-radius: 15px;
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
+    margin: 20px 0;
 }
 
 .video-container iframe {
@@ -500,6 +505,7 @@ main#content p {
     left: 0;
     width: 100%;
     height: 100%;
+    border-radius: 15px;
 }
 
 /* 
