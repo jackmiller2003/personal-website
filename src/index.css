@@ -635,7 +635,8 @@ footer#footer {
 
     #home-top {
         flex-direction: column;
-        gap: 20px
+        gap: 20px;
+        align-items: center
     }
 
     .home-quote {
