@@ -632,4 +632,14 @@ footer#footer {
         flex-direction: column;
         gap: 2px
     }
+
+    #home-top {
+        flex-direction: column;
+        gap: 20px
+    }
+
+    .home-quote {
+        height: auto;
+        padding: 0
+    }
 }
