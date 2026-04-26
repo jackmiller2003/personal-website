@@ -1,0 +1,31 @@
+import PostLayout from '../../components/PostLayout'
+
+export default function CycloneInterventions() {
+  return (
+    <PostLayout>
+      <h2>The Feasibility and Governance of Cyclone Interventions</h2>
+      <p><i>Paper published in Climate Risk Management. See <a href="https://www.sciencedirect.com/science/article/pii/S221209632300061X" target="_blank" rel="noreferrer">here</a>.</i></p>
+      <p>
+        Climate change is worsening cyclone disaster risk. Current risk reduction responses focus on reducing
+        vulnerability and exposure. Intervening in the cyclone hazard itself has the potential to prevent deaths
+        and destruction, and reduce the costs of disaster recovery. In this paper, Aaron Tang and I co-led a
+        review with Thao Linh Tran, Roslyn Prinsley and Mark Howden on the possible feasibility of these
+        interventions and the governance implications therein. Potential interventions include cloud seeding,
+        using pipes to inject cool water into cyclone hotspots, injecting particles into the upper atmosphere
+        and atmospheric aerosol injections. Approaches have different logistical requirements, side effects and
+        promise. Understanding the effectiveness and associated risks of different interventions will inform
+        prudent cyclone risk management and research. Our review points to the promise of aerosol injection and
+        high-altitude particle injection as first research directions. We also discuss potential governance risks
+        and requirements of cyclone interventions. Cyclone interventions raise many issues, ranging from robust
+        monitoring of ecological side effects, to geopolitics and politicisation. Current international climate
+        governance is ill-suited for potential technologies on the horizon. Good decision-making is required to
+        maximise benefits and reduce negative impacts.
+      </p>
+      <h3>Links</h3>
+      <ul>
+        <li><a href="https://theconversation.com/in-the-future-we-could-snuff-out-cyclones-but-weather-control-comes-with-new-risks-210788" target="_blank" rel="noreferrer">Article in The Conversation ("In the future, we could snuff out cyclones")</a></li>
+        <li><a href="https://iceds.anu.edu.au/research/research-stories/cyclogenesis-project" target="_blank" rel="noreferrer">Cyclogenesis project page (ANU Institute for Climate, Energy &amp; Disaster Solutions)</a></li>
+      </ul>
+    </PostLayout>
+  )
+}
